@@ -1,2 +1,11 @@
-idf_component_register(SRCS "..c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS
+        "main.c"
+        "st7796s.c"
+        "accelerometer.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_driver_spi
+        esp_driver_gpio
+)

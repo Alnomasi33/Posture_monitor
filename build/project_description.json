@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       ".",
-    "project_version":    "1",
+    "project_version":    "8b7ffb2-dirty",
     "project_path":       "C:/Users/Cia/Desktop/posture_monitor",
     "idf_path":           "C:/esp/v6.1/esp-idf",
     "build_dir":          "C:/Users/Cia/Desktop/posture_monitor/build",
@@ -1865,12 +1865,12 @@
             "dir": "C:/Users/Cia/Desktop/posture_monitor/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "esp_driver_spi", "esp_driver_gpio" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/Cia/Desktop/posture_monitor/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/Cia/Desktop/posture_monitor/main/..c" ],
+            "sources": [ "C:/Users/Cia/Desktop/posture_monitor/main/main.c", "C:/Users/Cia/Desktop/posture_monitor/main/st7796s.c", "C:/Users/Cia/Desktop/posture_monitor/main/accelerometer.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -4095,7 +4095,7 @@
             "dir": "C:/Users/Cia/Desktop/posture_monitor/main",
             "source": "project_components",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "esp_driver_spi", "esp_driver_gpio" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
